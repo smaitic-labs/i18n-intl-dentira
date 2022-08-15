@@ -46,12 +46,12 @@ const App = () => {
 };
 ```
 
-Children component will pick translated messages based upon keys defined in these jsons.
+Children component will pick translated messages based upon keys defined in these jsons and insert it in the Formatted Message's id as shown below.
 
 ```
-      <p>
-        <FormattedMessage id="click_count" values={{ count: count }} />
-      </p>
+ <button onClick={onChange}>
+    <FormattedMessage id="click_here" />
+ </button>
 ```
 
 ## Available Scripts
