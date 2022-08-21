@@ -13,8 +13,10 @@ class Translate extends React.Component {
     }   
 }
 
-export const TranslateCore = (t ) => {
-        return useIntl().formatMessage(t);   
+export const TranslateCore = (t) => {
+        const values = t.values;
+        delete t.values;
+        return useIntl().formatMessage(t, values);   
 }
 
 export default Translate;

@@ -1,6 +1,8 @@
 {
     "learn_to": "Hello, let's learn how to use React-Intl",
     "price_display": "How {n, number, ::currency/INR} is displayed in your selected language",
+    "price_display_2": "How {name}",
+    "price_display_3": "{c, number, :::currency/USD}",
     "number_display": "This is how {n} is formatted in the selected locale",
     "start_today": "Start Today: {d, date}",
     "about_project": "About the project",

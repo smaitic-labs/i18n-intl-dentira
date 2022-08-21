@@ -1,13 +1,16 @@
-import Translate, { TranslateCore}  from "../lib/Translate";
-import { FormattedMessage } from "react-intl"; 
+import Translate, { TranslateCore }  from "../lib/Translate";
+import { FormattedMessage, FormattedNumber } from "react-intl"; 
 const Content = () => {
-  return (
+  const t = TranslateCore({ id:"start_msg", defaultMessage:"tst" } )
+   const name="Tenish"
+    return (
     <div className="container hero">
       <h1>
         <Translate id="learn_to" />
       </h1>
       <p>
-        <Translate id="price_display" values={{ n: 59.99 }} />
+        <Translate id="price_display" values={{ n: 59.99, c: "$" }} />
+        { TranslateCore({ id:"price_display_2", defaultMessage:`How ${name}`, values:{name:name} }) }
       </p>
       <p>
         <Translate id="number_display" values={{ n: 2000 }} />
@@ -16,7 +19,7 @@ const Content = () => {
         <Translate id="start_today" values={{ d: new Date() }} />
       </p>
       <p>
-        { TranslateCore({ id:"start_msg", defaultMessage:"tst" } ) }
+        { t }
       </p>
       <div>
           <input type="text" placeholder={ TranslateCore({ id:"start_msg", defaultMessage:"tst" } ) } id="fname" name="fname" />
