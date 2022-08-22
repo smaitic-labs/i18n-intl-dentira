@@ -14,5 +14,7 @@
     "price_test": "{name}",
     "price_test2": "{name}",
     "languages": "Languages",
-    "test.test1": "Languages"
+    "test.test1": "Languages",
+    "placeholder_test": "Test Placeholder",
+    "search": "Search"
 }

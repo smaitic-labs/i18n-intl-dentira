@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FormattedMessage } from "react-intl";
+import Translate from "../lib/Translate"
 
 const Footer = () => {
   const [count, setCount] = useState(0);
@@ -10,6 +11,14 @@ const Footer = () => {
   return (
     <div className="container mt">
       {/* Footer content here */}
+      <div>
+        <Translate id="placeholder_test"/>
+        <FormattedMessage id="search">
+        {   placeholder =>
+            <input placeholder={placeholder}/>
+        }
+        </FormattedMessage>
+      </div>
       <p>
         <FormattedMessage id="click_button" />
       </p>
