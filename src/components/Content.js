@@ -1,5 +1,8 @@
 import Translate, { TranslateCore }  from "../lib/Translate";
 import { FormattedMessage, FormattedNumber } from "react-intl"; 
+import Test from "./Test";
+import Test2 from "./Test2";
+
 const Content = () => {
   const t = TranslateCore({ id:"start_msg", defaultMessage:"tst" } )
    const name="Tenish"
@@ -21,6 +24,12 @@ const Content = () => {
       <p>
         { t }
       </p>
+      <div>
+        <Test2 id="start_test_testw" test={ TranslateCore({ id:"price_test2", values:{name:"test test test"} }) } />
+      </div>
+      <div>
+        <Test id="start_test_test" test={ TranslateCore({ id:"price_test", defaultMessage:"this is nothing", values:{name:"test test"} }) } />
+      </div>
       <div>
           <input type="text" placeholder={ TranslateCore({ id:"start_msg", defaultMessage:"tst" } ) } id="fname" name="fname" />
       </div>
