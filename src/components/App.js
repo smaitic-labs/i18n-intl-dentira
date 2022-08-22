@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Header from "./Header";
-import Content from "./Content";
 import Footer from "./Footer";
 import { IntlProvider } from "react-intl";
 import en from "./../lang/en.json"; //default language
+import ContentNew from "./Content_new";
+import ContentNewFunction from "./Content_new_function";
+import Content from "./Content";
 
 const App = () => {
   const [locale, setLocale] = useState(navigator.language);
@@ -21,7 +23,9 @@ const App = () => {
     <IntlProvider messages={messages} locale={locale} defaultLocale={locale}>
       <div>
         <Header />
-        <Content />
+      <Content />
+      <ContentNew />
+      <ContentNewFunction />
         <Footer />
       </div>
     </IntlProvider>

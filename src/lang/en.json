@@ -5,6 +5,7 @@
     "price_display_3": "{c, number, :::currency/USD}",
     "number_display": "This is how {n} is formatted in the selected locale",
     "start_today": "Start Today: {d, date}",
+    "start_msg": "Start Msg",
     "about_project": "About the project",
     "contact_us": "Contact us",
     "click_count": "You clicked {count, plural, one {# time} other {# times}}",
@@ -12,5 +13,6 @@
     "click_here": "click here",
     "price_test": "{name}",
     "price_test2": "{name}",
-    "languages": "Languages"
+    "languages": "Languages",
+    "test.test1": "Languages"
 }

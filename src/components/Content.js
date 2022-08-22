@@ -5,7 +5,8 @@ import Test2 from "./Test2";
 
 const Content = () => {
   const t = TranslateCore({ id:"start_msg", defaultMessage:"tst" } )
-   const name="Tenish"
+   const name="Tenish";
+    console.log("log",t)
     return (
     <div className="container hero">
       <h1>
@@ -31,7 +32,8 @@ const Content = () => {
         <Test id="start_test_test" test={ TranslateCore({ id:"price_test", defaultMessage:"this is nothing", values:{name:"test test"} }) } />
       </div>
       <div>
-          <input type="text" placeholder={ TranslateCore({ id:"start_msg", defaultMessage:"tst" } ) } id="fname" name="fname" />
+        {t}
+          <input type="text" placeholder={t} id="fname" name="fname" />
       </div>
        <Translate id="test" default="<span>red</span><h1>green</h1>"
                             values={{
